@@ -1,0 +1,22 @@
+{
+  "name": "croncli",
+  "version": "1.0.0",
+  "description": "cron register script",
+  "bin": {
+    "croncli": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shunitoh/croncli.git"
+  },
+  "preferGlobal" : true,
+  "dependencies": {
+      "cron"         : "*",
+      "time"         : "*",
+      "opts"         : "*",
+      "lodash"       : "*",
+      "moment"       : "*"
+  },
+  "author": "shunitou",
+  "license": "MIT"
+}
