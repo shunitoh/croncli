@@ -9,10 +9,22 @@ $ npm install -g croncli
 
 ### Usage
 ```
-$ croncli -s "* * * * * *" -c "ls /tmp/" -t "Asia/Tokyo"
+$ croncli -s "* * * * * *" -c "ls hoge/" -t "Asia/Tokyo"
+Input schedule : "* * * * * *"
+Input command  : "ls hoge/"
+2016/10/03 18:02:28 $ ls hoge/
+hoge.txt
+
+2016/10/03 18:02:29 $ ls hoge/
+hoge.txt
+
+2016/10/03 18:02:30 $ ls hoge/
+hoge.txt
+
+...
 ```
 
-### Usage
+### Parameter Description
 | options  | required | short option | long option | description               | example                                           |
 | ---------|----------|--------------|-------------|---------------------------|---------------------------------------------------|
 | schedule | true     | -s           | --schedule  | cron schedule             | $ croncli -s "* * * * * *" -c "node /tmp/hoge.js" |
