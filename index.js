@@ -61,11 +61,8 @@ if(lodash.size(scheduleList) !== 6){
 //
 // output schedule
 console.log(
-  'Input schedule: ' + 
-  scheduleList[5] + '(week) ' + scheduleList[4] + '(month) ' +
-  scheduleList[3] + '(day) ' + scheduleList[2] + '(hours) ' +
-  scheduleList[1] + '(minutes) ' + scheduleList[0] + '(seconds)\n' + 
-  'Input Command: ' + command
+  'Input schedule : "' + schedule + '"\n'+
+  'Input command  : "' + command  + '"'
 );
 
 let job = new CronJob({
@@ -76,10 +73,10 @@ let job = new CronJob({
     console.log(moment().format('YYYY/MM/DD HH:mm:ss') + ' $ ' + command);
     exec(command, function(err, stdout, stderr){
       if(err){
-        console.log('err:', err);
+        console.log(err);
       }
       if(stdout){
-        console.log('info:', stdout);
+        console.log(stdout);
       }
     });
   }
