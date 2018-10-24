@@ -14,7 +14,7 @@
       "cron"         : "1.1.0",
       "time"         : "0.11.4",
       "opts"         : "1.2.2",
-      "lodash"       : "4.16.2",
+      "lodash"       : "*",
       "moment"       : "*"
   },
   "author": "shunitou",
